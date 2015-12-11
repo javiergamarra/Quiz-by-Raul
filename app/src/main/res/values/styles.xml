@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--para cada color de una función se puede coger la ID de COLORS.XML -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/dark_primary</item>
+
+        <item name="colorAccent">@color/accent</item>
+
+
+          <!--conjunto de colores para CONTROL-->
+          <item name="colorControlActivated">@color/light_primary</item>
+          <item name="colorControlNormal">@color/primary</item>
+        <!--conjunto de colores para TEXTOS-->
+        <item name="android:textColorPrimary">@color/dark_primary</item>
+        <item name="android:textColorSecondary">@color/accent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="36dp"
+    android:paddingRight="26dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".QuizActivity"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingEnd="46dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginStart="25dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="40dp"
+    android:background="#55FFFF00"
+    android:layout_marginBottom="45dp"
+    android:orientation="vertical">
+
+    <!-- añadir un fragment-->
+    <fragment android:name="com.examle.ExampleFragment"
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--le asigno una ID que luego usaré para ubicar-->
+    <AnalogClock
+        android:id="@+id/clock"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@drawable/cubo"
+        />
+    <!--uso la ubicación anterior para colocar otro elemento-->
+    <TextView
+        android:layout_below="@+id/clock"
+        android:id="@+id/text"
+        android:text="@string/hola"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center" />
+
+
+    <EditText
+        android:id="@+id/text2"
+        android:layout_below="@+id/text"
+        android:layout_centerInParent="true"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_horizontal_margin"
+        android:paddingLeft="16dp"
+        android:background="#4400AA44"
+        android:hint="@string/escribe"
+        android:cursorVisible="true">
+        <requestFocus/>
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="185dp"
+        android:layout_height="140dp"
+        android:background="@drawable/yo"
+        android:layout_below="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        style="?android:attr/buttonBarStyle"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/enter"
+            android:layout_height="25dp"
+            android:layout_width="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_marginLeft="65dp"
+            android:layout_marginStart="55dp"
+            android:text="@string/enter_button"
+            android:background="#55440000"/>
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#55225522"
+            android:text="@string/exit_button"/>
+    </LinearLayout>
+
+</RelativeLayout>

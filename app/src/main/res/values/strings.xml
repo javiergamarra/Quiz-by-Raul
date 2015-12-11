@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="hola">Hola mundo!</string>
+    <string name="hello">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="escribe">  Escribe tu nombre</string>
+    <string name="exit_toast">Salir de la aplicación</string>
+    <string name="enter_toast">Entrar en la aplicación</string>
+    <string name="exit_button"> SALIR</string>
+    <string name="enter_button"> ENTRAR</string>
+</resources>
