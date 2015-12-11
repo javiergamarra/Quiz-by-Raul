@@ -75,8 +75,8 @@ public class QuizActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Intent intentA = new Intent(this, SettingsActivity.class);   //no concluido !!!!!!
-            startActivity(intentA);
+//            Intent intentA = new Intent(this, SettingsActivity.class);   //no concluido !!!!!!
+//            startActivity(intentA);
             Intent intentB=new Intent(this, EnvironmentalReverb.Settings.class);
             intentB.putExtra("ejemplo", true);
             startActivity(intentB);
