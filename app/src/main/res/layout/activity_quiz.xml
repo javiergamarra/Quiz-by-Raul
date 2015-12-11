@@ -18,10 +18,10 @@
     android:orientation="vertical">
 
     <!-- añadir un fragment-->
-    <fragment android:name="com.examle.ExampleFragment"
-        android:id="@+id/fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    <!--<fragment android:name="com.examle.ExampleFragment"-->
+        <!--android:id="@+id/fragment"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
     <!--le asigno una ID que luego usaré para ubicar-->
     <AnalogClock
         android:id="@+id/clock"
